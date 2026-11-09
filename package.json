@@ -1,0 +1,36 @@
+{
+  "name": "@cernix-fr/socle",
+  "version": "0.1.0",
+  "description": "Règles de base pour agents IA (AGENTS.md, CLAUDE.md) à installer dans n'importe quel projet",
+  "type": "module",
+  "bin": {
+    "socle": "bin/socle.mjs"
+  },
+  "files": [
+    "bin",
+    "rules",
+    "global"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cernix-fr/socle.git"
+  },
+  "keywords": [
+    "agents.md",
+    "claude",
+    "codex",
+    "cursor",
+    "ai",
+    "rules"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}
