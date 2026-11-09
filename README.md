@@ -24,6 +24,14 @@ Les règles sont écrites dans `AGENTS.md`, entre deux marqueurs :
 
 Tout ce qui est en dehors de ce bloc appartient au projet et n'est jamais modifié. `update` relit la liste des modules dans le marqueur.
 
+## Modules
+
+| Module     | Contenu                                                              |
+| ---------- | -------------------------------------------------------------------- |
+| `base`     | Langue, récapitulatif, conventions de code, tests, prod et secrets   |
+| `git`      | Conventional Commits atomiques, push sur autorisation, rebase        |
+| `frontend` | Un composant par fichier                                             |
+
 ## Règles personnelles (global)
 
 ```bash
