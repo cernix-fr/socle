@@ -26,13 +26,13 @@ test('init puis update conservent le contenu du projet', () => {
   assert.equal(read(dir, 'CLAUDE.md'), '@AGENTS.md\n')
 
   // Bloc modifié à la main : update le régénère sans dupliquer.
-  writeFileSync(join(dir, 'AGENTS.md'), agents.replace('Règles de base', 'altéré'))
+  writeFileSync(join(dir, 'AGENTS.md'), agents.replace('Communication', 'altéré'))
   run(dir, 'update')
   run(dir, 'init', 'base')
   agents = read(dir, 'AGENTS.md')
   assert.equal(count(agents, 'socle:start'), 1)
   assert.equal(count(agents, 'Règle locale.'), 1)
-  assert.ok(agents.includes('Règles de base'))
+  assert.ok(agents.includes('## Communication'))
   assert.equal(read(dir, 'CLAUDE.md'), '@AGENTS.md\n')
 })
 
